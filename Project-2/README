@@ -1,0 +1,55 @@
+🚀 Internal Operations Dashboard
+
+A modern, interactive web application designed to simplify internal learner management and improve operational efficiency through automation and thoughtful UI design.
+
+🌟 Project Overview
+
+The Internal Operations Dashboard helps teams manage learner data efficiently by reducing manual tracking and organizing information in a clear, visual way. It provides real-time insights, smooth workflows, and a professional admin-style experience — all built using core web technologies.
+
+✨ Key Features
+
+✅ Complete CRUD functionality (Create, Read, Update, Delete)
+
+📊 Live dashboard with learner status summary
+
+🔍 Smart search by name or program
+
+🎯 Status-based filtering (Enrolled, Ongoing, Completed)
+
+💾 Auto data persistence using browser localStorage
+
+🔔 Toast notifications for actions
+
+🎨 Modern UI with animations, glassmorphism, and hover effects
+
+🧹 Reset and clear filters for quick management
+
+📱 Responsive and user-friendly layout
+
+🛠️ Technologies Used
+
+HTML5 – Structure
+
+CSS3 – Styling, animations, modern layout
+
+JavaScript (Vanilla) – Logic, interactivity, data handling
+
+LocalStorage – Data persistence (no backend required)
+
+📂 Project Structure ├── index.html ├── style.css └── script.js
+
+▶️ How to Run the Project
+
+Download or clone the repository
+
+Open the folder in VS Code
+
+Open index.html in your browser
+
+Start managing learners 🚀
+
+🎯 Purpose & Learning Outcome
+
+This project demonstrates how simple web technologies can be used to build a real-world internal business tool. It focuses on efficiency, usability, and clean design, making it suitable for operational dashboards and admin panels.
+
+👩‍💻Author: Arju Singh 🔗GitHub: https://github.com/arjusingh16
