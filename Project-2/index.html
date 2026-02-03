@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iron Lady | Internal Operations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <h1>👩‍💼 Operations Dashboard</h1>
+  <p>Smart internal learner management</p>
+</header>
+
+<main class="app">
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat total">👥 Total<br><span id="totalCount">0</span></div>
+    <div class="stat enrolled">📝 Enrolled<br><span id="enrolledCount">0</span></div>
+    <div class="stat ongoing">🚀 Ongoing<br><span id="ongoingCount">0</span></div>
+    <div class="stat completed">🎓 Completed<br><span id="completedCount">0</span></div>
+  </section>
+
+  <!-- ADD FORM -->
+  <section class="glass">
+    <h3>➕ Add Learner</h3>
+    <div class="form">
+      <input id="nameInput" placeholder="Full Name">
+      <input id="emailInput" placeholder="Email Address">
+      <input id="programInput" placeholder="Program Name">
+      <select id="statusInput">
+        <option>Enrolled</option>
+        <option>Ongoing</option>
+        <option>Completed</option>
+      </select>
+      <button onclick="addLearner()">Add</button>
+      <button class="danger" onclick="resetAll()">Reset All</button>
+    </div>
+    <p class="hint">💡 Data auto-saves. No backend required.</p>
+  </section>
+
+  <!-- SEARCH / FILTER -->
+  <section class="glass">
+    <h3>🔍 Search & Filter</h3>
+    <div class="form">
+      <input id="searchInput" placeholder="Search by name or program" oninput="applyFilters()">
+      <select id="filterStatus" onchange="applyFilters()">
+        <option value="">All Status</option>
+        <option>Enrolled</option>
+        <option>Ongoing</option>
+        <option>Completed</option>
+      </select>
+      <button onclick="clearFilters()">Clear</button>
+    </div>
+  </section>
+
+  <!-- TABLE -->
+  <section class="glass">
+    <h3>📋 Learner Records</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Program</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="learnerTable"></tbody>
+    </table>
+    <div id="emptyMsg">😕 No learners match your search</div>
+  </section>
+
+</main>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
